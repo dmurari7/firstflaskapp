@@ -44,8 +44,5 @@ def handle_params():
     else:
         return 'Error: not enough parameters'
     
-
-    
-
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000, debug=True)
