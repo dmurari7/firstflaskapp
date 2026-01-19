@@ -1,0 +1,14 @@
+<!-- base template with common structure, 
+ along with title and content blocks for adaptable pages
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Default Value{% endblock %}</title>
+</head>
+<body>
+    <p>This will always be here.</p>
+    {% block content %}{% endblock %}
+</body>
+</html>
