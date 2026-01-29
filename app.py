@@ -55,7 +55,7 @@ def convert_csv2():
     if not os.path.exists('downloads'):
         os.makedirs('downloads')
 
-    filename = f'{{ uuid.uuid4() }}.csv'
+    filename = f'{ uuid.uuid4() }.csv'
     df.to_csv(os.path.join('downloads', filename))
 
     return render_template('download.html', filename=filename)
