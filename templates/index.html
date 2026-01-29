@@ -20,4 +20,10 @@
         <input type="file" name="file" accept="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.openxmlformats-officedocument" required="required"><br>
         <input type="submit" value="Upload File">
     </form>
+
+    <h1>Convert CSV2</h1>
+    <form method="POST" action="{{ url_for('convert_csv2') }}" enctype="multipart/form-data">
+        <input type="file" name="file" accept="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.openxmlformats-officedocument" required="required"><br>
+        <input type="submit" value="Upload File">
+    </form>
 {% endblock %}
